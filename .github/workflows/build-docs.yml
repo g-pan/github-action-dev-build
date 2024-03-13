@@ -15,7 +15,7 @@ jobs:
     env:
       #COMMUNITY_REF: "9d70a3acbdaae3436884e9f5b132a297324c910e"
 #setting above REF to Placements doc  - containerbook
-      COMMUNITY_REF: "e23ee747d8723f261f37a487d63c9e322e52868f"
+      COMMUNITY_REF: "325ca9d2189ac6a223861d7dee8fcfd19f8ed709"
       #PT-BR 9.2 /\
       # set this to H30145 upd secrets 
       # Now setting the REF to my Branch to build
