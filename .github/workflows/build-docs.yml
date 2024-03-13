@@ -16,9 +16,9 @@ jobs:
       #COMMUNITY_REF: "dc1cdacdbdda6e5ca1c5b836e130c2deb2d2fe62"
       # set this to H30145 upd secrets 
       # Now setting the REF to my Branch to build
-      #COMMUNITY_REF:  "03fa00db28f62566f58de45e4bba607620e48d3b"
+      COMMUNITY_REF:  "03fa00db28f62566f58de45e4bba607620e48d3b"
       #FAILED REVERTING TO LKG-
-      COMMUNITY_REF:  "2c93ced5fbb86007ef4ef197fea8af8a5efff529"
+      #COMMUNITY_REF:  "2c93ced5fbb86007ef4ef197fea8af8a5efff529"
       #
       
     runs-on: ubuntu-22.04
