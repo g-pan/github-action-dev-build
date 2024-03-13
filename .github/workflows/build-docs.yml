@@ -13,8 +13,10 @@ jobs:
   preamble:
     name: Publish Release
     env:
-      COMMUNITY_REF: "9d70a3acbdaae3436884e9f5b132a297324c910e"
+      #COMMUNITY_REF: "9d70a3acbdaae3436884e9f5b132a297324c910e"
 #setting above REF to Placements doc  - containerbook
+      COMMUNITY_REF: "e23ee747d8723f261f37a487d63c9e322e52868f"
+      #PT-BR 9.2 /\
       # set this to H30145 upd secrets 
       # Now setting the REF to my Branch to build
       # COMMUNITY_REF:  "03fa00db28f62566f58de45e4bba607620e48d3b"
