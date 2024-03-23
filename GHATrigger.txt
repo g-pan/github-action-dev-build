@@ -5,6 +5,6 @@ Simply Modify THIS FILE and push to build.
 #################
 #add comments or what not -simply does not matter 
 #only need to make any change = just modify this file then push 
-#####ADD##HERE### %%
+#####ADD##HERE####
 
 #Trigger Time#
