@@ -19,10 +19,10 @@ jobs:
       #/\TEsting WITH JIMBOs REF
       # set this to H30145 upd secrets 
       # Now setting the REF to my Branch to build
-      COMMUNITY_REF:  "d0034b6a8f96225f5252e77df3c73d2095db24ef"
-      #FAILED REVERTING TO LKG-
+      #COMMUNITY_REF:  "d0034b6a8f96225f5252e77df3c73d2095db24ef"
       #COMMUNITY_REF:  "2c93ced5fbb86007ef4ef197fea8af8a5efff529"
-      #
+      #FAILED REVERTING 9.6 
+      COMMUNITY_REF : "57c188d83db8df17582db5fad85ee34ce637b3fb"
       #
     runs-on: ubuntu-22.04
     permissions:
