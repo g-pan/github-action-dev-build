@@ -21,8 +21,8 @@ jobs:
       # Now setting the REF to my Branch to build
       #COMMUNITY_REF:  "d0034b6a8f96225f5252e77df3c73d2095db24ef"
       #COMMUNITY_REF:  "2c93ced5fbb86007ef4ef197fea8af8a5efff529"
-      #FAILED REVERTING 9.6 
-      COMMUNITY_REF : "57c188d83db8df17582db5fad85ee34ce637b3fb"
+      #UPDATED VCPKG _REF
+      COMMUNITY_REF : "c8f648ae4f8445e3166c6fa87be59b832ccbf2e0"
       #
     runs-on: ubuntu-22.04
     permissions:
@@ -155,10 +155,11 @@ jobs:
       - name: CMake documentation (community)
         if: ${{ !matrix.ln && !matrix.ee && !matrix.container && matrix.documentation }}
         run: |
-          mkdir -p {${{needs.preamble.outputs.folder_build }},EN_US,PT_BR}
+          mkdir -p {${{needs.preamble.outputs.folder_build }},EN_US,PT_BR,vcpkg_downloads}
           sudo rm -f ${{ needs.preamble.outputs.folder_build }}/CMakeCache.txt
           sudo rm -rf ${{ needs.preamble.outputs.folder_build }}/CMakeFiles
           docker run --rm --mount ${{ needs.preamble.outputs.mount_platform }} --mount ${{ needs.preamble.outputs.mount_build }} ${{ steps.vars.outputs.docker_tag_candidate_base }} "\
+            cp /hpcc-dev/HPCC-Platform/build/tukaani-project-xz-v5.4.4.tar.gz ${{needs.preamble.outputs.folder_build }}/vcpkg_downloads/ && \
             cmake -S /hpcc-dev/HPCC-Platform -B /hpcc-dev/build -DMAKE_DOCS_ONLY=ON -DUSE_NATIVE_LIBRARIES=ON -DDOCS_AUTO=ON -DDOC_LANGS=ALL && \
             cmake --build /hpcc-dev/build --parallel $(nproc) --target all"
           docker run --rm --mount ${{ needs.preamble.outputs.mount_platform }} --mount ${{ needs.preamble.outputs.mount_build }} ${{ steps.vars.outputs.docker_tag_candidate_base }} "cd /hpcc-dev/build/Release/docs/EN_US && zip ALL_HPCC_DOCS_EN_US-${{ needs.preamble.outputs.community_tag }}.zip *.pdf"
