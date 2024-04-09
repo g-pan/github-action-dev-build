@@ -158,9 +158,7 @@ jobs:
           mkdir -p {${{needs.preamble.outputs.folder_build }},EN_US,PT_BR,vcpkg_downloads}
           sudo rm -f ${{ needs.preamble.outputs.folder_build }}/CMakeCache.txt
           sudo rm -rf ${{ needs.preamble.outputs.folder_build }}/CMakeFiles
-          ls /hpcc-dev/HPCC-Platform/build/
           docker run --rm --mount ${{ needs.preamble.outputs.mount_platform }} --mount ${{ needs.preamble.outputs.mount_build }} ${{ steps.vars.outputs.docker_tag_candidate_base }} "\
-            cp /hpcc-dev/HPCC-Platform/build/tukaani-project-xz-v5.4.4.tar.gz ${{needs.preamble.outputs.folder_build }}/vcpkg_downloads/ && \
             cmake -S /hpcc-dev/HPCC-Platform -B /hpcc-dev/build -DMAKE_DOCS_ONLY=ON -DUSE_NATIVE_LIBRARIES=ON -DDOCS_AUTO=ON -DDOC_LANGS=ALL && \
             cmake --build /hpcc-dev/build --parallel $(nproc) --target all"
           docker run --rm --mount ${{ needs.preamble.outputs.mount_platform }} --mount ${{ needs.preamble.outputs.mount_build }} ${{ steps.vars.outputs.docker_tag_candidate_base }} "cd /hpcc-dev/build/Release/docs/EN_US && zip ALL_HPCC_DOCS_EN_US-${{ needs.preamble.outputs.community_tag }}.zip *.pdf"
