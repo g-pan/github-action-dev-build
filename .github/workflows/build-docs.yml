@@ -20,10 +20,10 @@ jobs:
       # set this to H30145 upd secrets 
       # Now setting the REF to my Branch to build
       #COMMUNITY_REF:  "d0034b6a8f96225f5252e77df3c73d2095db24ef"
-      #COMMUNITY_REF:  "2c93ced5fbb86007ef4ef197fea8af8a5efff529"
-      #UPDATED VCPKG _REF
-      COMMUNITY_REF : "c8f648ae4f8445e3166c6fa87be59b832ccbf2e0"
-      ##?
+      COMMUNITY_REF:  "1aea2f65b5c01d92002e855eb01e03f3e716e979"
+      #UPDATED VCPKG _REF - below was LKG
+      #COMMUNITY_REF : "c8f648ae4f8445e3166c6fa87be59b832ccbf2e0"
+      ##In theory this should build H27280 
     runs-on: ubuntu-22.04
     permissions:
       contents: write
