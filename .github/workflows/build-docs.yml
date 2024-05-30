@@ -15,14 +15,8 @@ jobs:
     env:
       #COMMUNITY_REF: "9d70a3acbdaae3436884e9f5b132a297324c910e"
 #setting above REF to Placements doc  - containerbook
-      #JIMS-COMMUNITY_REF: "3caea9d7bbd04aef2a15fff8c65565b9b3867e7c"
-      #/\TEsting WITH JIMBOs REF
-      # set this to H30145 upd secrets 
-      # Now setting the REF to my Branch to build
-      #COMMUNITY_REF:  "d0034b6a8f96225f5252e77df3c73d2095db24ef"
-      COMMUNITY_REF:  "d2fa84ee69e3741412afae466bf65454c85bea2b"
-      #UPDATED VCPKG _REF - below was LKG
-      #COMMUNITY_REF : "c8f648ae4f8445e3166c6fa87be59b832ccbf2e0"
+            # added REF for ZAP
+      COMMUNITY_REF : "db681f9a75d93f55998751130f5725ef6134e405"
       ##In theory this should build H27280 OK
     runs-on: ubuntu-22.04
     permissions:
