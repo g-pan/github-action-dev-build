@@ -16,7 +16,7 @@ jobs:
       #COMMUNITY_REF: "9d70a3acbdaae3436884e9f5b132a297324c910e"
 #setting above REF to Placements doc  - containerbook
             # added REF for ZAP
-      COMMUNITY_REF : "db681f9a75d93f55998751130f5725ef6134e405"
+      COMMUNITY_REF : "661b80c65d6ec29c5c168efe9ee94867284fa590"
       ##In theory this should build H27280 OK
     runs-on: ubuntu-22.04
     permissions:
