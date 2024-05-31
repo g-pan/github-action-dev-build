@@ -15,9 +15,9 @@ jobs:
     env:
       #COMMUNITY_REF: "9d70a3acbdaae3436884e9f5b132a297324c910e"
 #setting above REF to Placements doc  - containerbook
-            # added REF for ZAP
-      COMMUNITY_REF : "661b80c65d6ec29c5c168efe9ee94867284fa590"
-      ##In theory this should build H27280 OK
+            # added REF for PrefPane a661f9c
+      COMMUNITY_REF : "a661f9c1e1dcafbf95de9a3dfcd45a0fe393261a"
+      #
     runs-on: ubuntu-22.04
     permissions:
       contents: write
@@ -167,7 +167,7 @@ jobs:
             ${{ needs.preamble.outputs.folder_build }}/Release/docs/*.zip
             ${{ needs.preamble.outputs.folder_build }}/Release/docs/EN_US/*.zip
             ${{ needs.preamble.outputs.folder_build }}/Release/docs/PT_BR/*.zip
-            ${{ needs.preamble.outputs.folder_build }}/docs/EN_US/EclipseHelp/*.zip
+           #Removed the Eclipse
             ${{ needs.preamble.outputs.folder_build }}/docs/EN_US/HTMLHelp/*.zip
             ${{ needs.preamble.outputs.folder_build }}/docs/PT_BR/HTMLHelp/*.zip
           compression-level: 0
