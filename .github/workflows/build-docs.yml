@@ -14,8 +14,9 @@ jobs:
     env:
       # where are my other scripts
       #COMMUNITY_REF: "dc1cdacdbdda6e5ca1c5b836e130c2deb2d2fe62"
-      COMMUNITY_REF : "b808b7c2864243ad5a18852f94ab9575714f787a"
-      #  HPCC-31846 Undocumented behaviour of intformat() function.
+      COMMUNITY_REF : "128bed90b093b1155b12a1fbb6c11c2897cd9359"
+      #  HPCC-32057 
+
       
     runs-on: ubuntu-22.04
     permissions:
