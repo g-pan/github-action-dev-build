@@ -36,6 +36,8 @@ You need to set up the secrets on your (clone) of the GitHub action-build reposi
 # Configuring Building from your Repo
 To configure for builds you need to tell it what you want to build, and when. These are the steps in order to do that. first you will need to get your community ref value for the build script. The community ref value referred to is the Git REF value for the git object -commit, branch, tag, etc. that you want to build. For example if you wanted to test your branch that you just created, you need to get that value for the community REF. 
 
+Another way to get the REF: on Github site click on the commit and it is on the top right of the commit 
+
 ## Get the REF value
 To get the community REF value, using github cli enter :
      ```
