@@ -14,8 +14,8 @@ jobs:
     env:
       # where are my other scripts
       #COMMUNITY_REF: "dc1cdacdbdda6e5ca1c5b836e130c2deb2d2fe62"
-      COMMUNITY_REF : "0176a72aeaa0f932d48d11034feb24c66ef3ec1c"
-      #  HPCC-32074 Document new 'wrap' parameter for Std.File.Copy() and Std.File.fCopy()
+      COMMUNITY_REF : "4e587a0c06a68e20a2c90300b01981ece2055cbd"
+      #  HPCC-32110 Resolve Attribute clash #18799
 
       
     runs-on: ubuntu-22.04
