@@ -14,8 +14,10 @@ jobs:
     env:
       # where are my other scripts
       #COMMUNITY_REF: "dc1cdacdbdda6e5ca1c5b836e130c2deb2d2fe62"
-      COMMUNITY_REF : "4e587a0c06a68e20a2c90300b01981ece2055cbd"
-      #  HPCC-32110 Resolve Attribute clash #18799
+      COMMUNITY_REF : "e1a583a692a4afe60297919ab86733f79874b4b9"
+      # HPCC-32178 Fix Typo in Type Casting Example code
+
+Signed-off-by: Jim DeFabia <jamesdefabia@lexisnexis.com>
 
       
     runs-on: ubuntu-22.04
