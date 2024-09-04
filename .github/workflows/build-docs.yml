@@ -14,9 +14,9 @@ jobs:
     env:
       # where are my other scripts
       #COMMUNITY_REF: "dc1cdacdbdda6e5ca1c5b836e130c2deb2d2fe62"
-      COMMUNITY_REF : "05c2480bebdfb98334d14e84e7f1e79d8af61dc7"
-      # HPCC-32097
-      
+      COMMUNITY_REF : "d131166799657970c93b63b789d820faccdee8e6"
+      # HPCC-32470
+     
     runs-on: ubuntu-22.04
     permissions:
       contents: write
