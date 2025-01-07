@@ -16,8 +16,8 @@ jobs:
       #COMMUNITY_REF: "dc1cdacdbdda6e5ca1c5b836e130c2deb2d2fe62"
       #COMMUNITY_REF : "d131166799657970c93b63b789d820faccdee8e6"
       # HPCC-32470
-      COMMUNITY_REF : "fa638342bb0a61bd3c16ca4619c880271ccc7ce5"
-      # HPCC-33000
+      COMMUNITY_REF : "fb3050666a48ec1dde53fc7d4c90c019fe66983c"
+      # HPCC-33085
     runs-on: ubuntu-22.04
     permissions:
       contents: write
