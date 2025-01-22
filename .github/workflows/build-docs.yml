@@ -18,9 +18,6 @@ jobs:
       # HPCC-32470
       COMMUNITY_REF : "c790480668907b07a454cc757efafcef06677af5"
       # HPCC-33238
-
-
-Update docs for monolithic installs (platform+plugins)
     runs-on: ubuntu-22.04
     permissions:
       contents: write
