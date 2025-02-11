@@ -18,7 +18,7 @@ jobs:
       # HPCC-32470
       # COMMUNITY_REF : "f595e3b8156fb55e1179b9533bb4eed28215a378"
       # COMMUNITY_REF : "2532e643fdc1842e1c68741cf048f7c373d67679"
-      COMMUNITY_REF : "da243b899e16cbdc5994febc66741ef640c4a36a"
+      COMMUNITY_REF : "b88db4623aab2a521177cb06d80d5ce0948d8ff4"
            
       # HPCC-20457
     runs-on: ubuntu-22.04
