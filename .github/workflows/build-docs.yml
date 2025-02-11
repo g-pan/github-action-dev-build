@@ -21,9 +21,7 @@ jobs:
       COMMUNITY_REF : "4cfbda4733a8999c66e5df31af7f7e651510c1bc"
            
       # HPCC-33386
-
-
-Consistently Capitalize the C++ Language reference in all Docs
+      
     runs-on: ubuntu-22.04
     permissions:
       contents: write
