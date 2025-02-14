@@ -18,9 +18,9 @@ jobs:
       # HPCC-32470
       # COMMUNITY_REF : "f595e3b8156fb55e1179b9533bb4eed28215a378"
       # COMMUNITY_REF : "2532e643fdc1842e1c68741cf048f7c373d67679"
-      COMMUNITY_REF : "4cfbda4733a8999c66e5df31af7f7e651510c1bc"
+      COMMUNITY_REF : "e20c5ad03224fe69b51b4b6b562b5e86cf0cb943"
            
-      # HPCC-33386
+      # HPCC-27531 Document GETSECRET
       
     runs-on: ubuntu-22.04
     permissions:
