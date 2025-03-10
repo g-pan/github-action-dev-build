@@ -18,7 +18,7 @@ jobs:
       # HPCC-32470
       # COMMUNITY_REF : "f595e3b8156fb55e1179b9533bb4eed28215a378"
       # COMMUNITY_REF : "2532e643fdc1842e1c68741cf048f7c373d67679"
-      COMMUNITY_REF : "a337bf86b5cb70c2d1fcfdc4b04e7ca9bafbc141"
+      COMMUNITY_REF : "79820a892b26057185d829a0eabd0db8f67ab831"
            
       # HPCC-33601 Document the lz4s and lz4shc index compression and options
       
