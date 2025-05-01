@@ -18,9 +18,9 @@ jobs:
       # HPCC-32470
       # COMMUNITY_REF : "f595e3b8156fb55e1179b9533bb4eed28215a378"
       # COMMUNITY_REF : "2532e643fdc1842e1c68741cf048f7c373d67679"
-      COMMUNITY_REF : "6f2aa4cbcf5348e2b14919dcec73f0dc0dab6792"
+      COMMUNITY_REF : "add9fe27e45eb27f5d9b25fe136168416f76c003"
            
-      # HPCC-33344 Remove references to Javascript from docs
+      # HPCC-33937 CommonPrefixSuffix
       
     runs-on: ubuntu-22.04
     permissions:
