@@ -130,8 +130,9 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           builder: ${{ steps.buildx.outputs.name }}
-          file: ${{ needs.preamble.outputs.folder_platform }}/dockerfiles/vcpkg/${{ matrix.os }}.dockerfile
-          context: ${{ needs.preamble.outputs.folder_platform }}/dockerfiles/vcpkg
+#updated post 9.10 build sauce
+          file: ${{ needs.preamble.outputs.folder_platform }}/dockerfiles/${{ matrix.os }}.dockerfile
+          context: ${{ needs.preamble.outputs.folder_platform }}/dockerfiles
           push: ${{ github.repository_owner == 'hpcc-systems' }}
           load: ${{ github.repository_owner != 'hpcc-systems' }}
           build-args: |
