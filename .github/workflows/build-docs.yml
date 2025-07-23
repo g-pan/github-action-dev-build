@@ -20,8 +20,8 @@ jobs:
   preamble:
     name: Publish Release
     env:
-      # Tracking H27222
-      COMMUNITY_REF: "68320777bbe2b7017a2987b58eec191c7aa6a914"
+      # Tracking H34539
+      COMMUNITY_REF: "5dbe433e35d59e36230aac8a490c1e858bcabd0c"
       #COMMUNITY_REF:  "4feb5741059d812a12d3be7fcec938c24aa77492"
       GITHUB_ACCOUNT: ${{ github.repository_owner }}
     runs-on: ubuntu-22.04
